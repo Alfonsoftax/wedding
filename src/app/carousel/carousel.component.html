@@ -1,0 +1,39 @@
+<div class="carousel-container">
+    <!-- Navigation Arrows -->
+    <button 
+      class="nav-button prev" 
+      (click)="previousSlide()"
+      *ngIf="currentSlide !== 0">
+      ❮
+    </button>
+    
+    <!-- Images Container -->
+    <div class="carousel-content">
+      <div 
+        class="slides" 
+        [style.transform]="'translateX(' + (-currentSlide * 100) + '%)'">
+        <div 
+          *ngFor="let image of images" 
+          class="slide">
+          <img [src]="image" [alt]="'Slide image'" class="carousel-image">
+        </div>
+      </div>
+    </div>
+
+    <button 
+      class="nav-button next" 
+      (click)="nextSlide()"
+      *ngIf="currentSlide !== images.length - slidesToShow">
+      ❯
+    </button>
+
+    <!-- Dots -->
+    <div class="carousel-dots">
+      <button
+        *ngFor="let dot of dots; let i = index"
+        class="dot"
+        [class.active]="i === currentSlide"
+        (click)="goToSlide(i)">
+      </button>
+    </div>
+  </div>

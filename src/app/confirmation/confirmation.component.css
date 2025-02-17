@@ -1,0 +1,118 @@
+.confirmation-container {
+    min-height: 80vh;
+    background-image: url('/assets/image/background-texture.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+
+  .content-wrapper {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    /* background-color: rgba(255, 255, 255, 0.95); */
+    border-radius: 8px;
+  }
+
+  .dialog-bubble {
+    margin: 0 auto 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .confirmation-title {
+    color: #698474;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  .message-wrapper {
+    margin: 30px 0;
+  }
+
+  .main-message {
+    font-size: 2.5rem;
+    color: #333;
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+
+  .sub-message {
+    font-size: 1.8rem;
+    color: #555;
+    font-style: italic;
+  }
+
+  .deadline-text {
+    margin: 10px 0;
+    color: #444;
+  }
+
+  .companion-text {
+    margin-bottom: 10px;
+    color: #444;
+  }
+
+  .form-link {
+    color: #698474;
+    text-decoration: underline;
+    &:hover {
+      color: darken(#698474, 10%);
+    }
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .action-button {
+    padding: 15px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+  }
+
+  .confirm-button {
+    background-color: #698474;
+    color: white;
+    &:hover {
+      background-color: darken(#698474, 10%);
+    }
+  }
+
+  .calendar-button {
+    background-color: white;
+    color: #698474;
+    border: 2px solid #698474;
+    &:hover {
+      background-color: #698474;
+      color: white;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main-message {
+      font-size: 2rem;
+    }
+    .sub-message {
+      font-size: 1.5rem;
+    }
+    .action-button {
+      font-size: 0.8rem;
+      padding: 12px 20px;
+    }
+  }

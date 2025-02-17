@@ -1,0 +1,159 @@
+:host {
+    display: block;
+    min-height: 50vh;
+  }
+
+  .container {
+    background-color: #718878;
+    min-height: 50vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .content {
+    max-width: 800px;
+  }
+
+  .date {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    line-height: 0.8;
+  }
+
+  .faltan {
+    font-size: 1.25rem;
+    margin-bottom: 0rem;
+  }
+
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 0rem;
+  }
+
+  .time-block {
+    text-align: center;
+  }
+
+  .number {
+    font-size: 4rem;
+    font-weight: 300;
+  }
+
+  .label {
+    font-size: 1.25rem;
+  }
+
+  .events {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+  }
+
+  .event {
+    text-align: center;
+  }
+
+  .icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto 1rem;
+  }
+
+  .event-title {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+
+  .event-subtitle {
+    font-size: 1.125rem;
+  }
+
+/* Estilos responsivos para teléfonos móviles */
+@media (max-width: 768px) {
+  .content {
+    max-width: 90%;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .faltan {
+    font-size: 1rem;
+  }
+
+  .countdown {
+    gap: 2rem;
+  }
+
+  .number {
+    font-size: 3rem;
+  }
+
+  .label {
+    font-size: 1rem;
+  }
+
+  .events {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .event-title {
+    font-size: 1.3rem;
+  }
+
+  .event-subtitle {
+    font-size: 1rem;
+  }
+
+  .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+/* Ajustes para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .countdown {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .number {
+    font-size: 2.5rem;
+  }
+
+  .label {
+    font-size: 0.9rem;
+  }
+
+  .events {
+    gap: 1.5rem;
+  }
+
+  .event-title {
+    font-size: 1.2rem;
+  }
+
+  .event-subtitle {
+    font-size: 0.9rem;
+  }
+}

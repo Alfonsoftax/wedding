@@ -1,0 +1,64 @@
+<div class="details-container">
+  <div class="header">
+    <h2 class="question">¿DUDAS?</h2>
+    <h1 class="title">Te contamos todos los detalles</h1>
+  </div>
+
+  <div class="accordion">
+    <!-- Dress Code Section -->
+    <div class="accordion-item">
+      <div class="accordion-header" (click)="toggleSection('dressCode')" 
+           [class.active]="activeSection === 'dressCode'">
+        <span class="header-text">Dress Code</span>
+        <span class="arrow" [class.rotated]="activeSection === 'dressCode'">▼</span>
+      </div>
+      <div class="accordion-content" [@slideInOut]="activeSection === 'dressCode' ? 'open' : 'closed'">
+        <h3>¡Vamos a estar muy facheros!</h3>
+        <p>El código de vestimenta será Elegante Sport.</p>
+        <p>¡No olvides traer calzado cómodo para caminar y bailar sobre el pasto!</p>
+      </div>
+    </div>
+
+    <!-- Regalo Section -->
+    <div class="accordion-item">
+      <div class="accordion-header" (click)="toggleSection('regalo')"
+           [class.active]="activeSection === 'regalo'">
+        <span class="header-text">Regalo</span>
+        <span class="arrow" [class.rotated]="activeSection === 'regalo'">▼</span>
+      </div>
+      <div class="accordion-content" [@slideInOut]="activeSection === 'regalo' ? 'open' : 'closed'">
+        <div class="regalo-content">
+          <p>Contenido de la sección Regalo</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alojamiento Section -->
+    <div class="accordion-item">
+      <div class="accordion-header" (click)="toggleSection('alojamiento')"
+           [class.active]="activeSection === 'alojamiento'">
+        <span class="header-text">Alojamiento</span>
+        <span class="arrow" [class.rotated]="activeSection === 'alojamiento'">▼</span>
+      </div>
+      <div class="accordion-content" [@slideInOut]="activeSection === 'alojamiento' ? 'open' : 'closed'">
+        <div class="alojamiento-content">
+          <p>Contenido de la sección Alojamiento</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Niños Section -->
+    <div class="accordion-item">
+      <div class="accordion-header" (click)="toggleSection('ninos')"
+           [class.active]="activeSection === 'ninos'">
+        <span class="header-text">Niños</span>
+        <span class="arrow" [class.rotated]="activeSection === 'ninos'">▼</span>
+      </div>
+      <div class="accordion-content" [@slideInOut]="activeSection === 'ninos' ? 'open' : 'closed'">
+        <div class="ninos-content">
+          <p>Contenido de la sección Niños</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
