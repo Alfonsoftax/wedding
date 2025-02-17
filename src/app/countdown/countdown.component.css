@@ -127,7 +127,7 @@
 }
 
 /* Ajustes para pantallas muy pequeñas (menos de 480px) */
-@media (max-width: 480px) {
+@media (max-width: 346px) {
   .title {
     font-size: 1.5rem;
   }
